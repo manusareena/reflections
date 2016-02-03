@@ -17,3 +17,7 @@ Git allows us to add the files that are modified into the staging area. The comm
 * What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 With branches we can organize specific changes that apply to the entire project organized. It might an version for specific target group. Or it might be different modes of a game. Branches allow to organize these global changes separately.
 
+
+* How do the diagrams help you visualize the branch structure?
+The branch structure is like a tree. There could be many branches that exist. Hence a graphical structure of the branch structure is more intuitive that specifying which branch belongs where.
+
