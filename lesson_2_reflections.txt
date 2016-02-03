@@ -1,0 +1,11 @@
+* What happens when you initialize a repository? Why do you need to do it?
+
+When a repository is initialized a .git folder is created in the file system. This directory contains the meta data to keep track of the version history. However, any files present in the directory still remain untracked. Specific git add command must be executed to start tracking them.
+
+We initialize the repository to maintain version history of the files under that project.
+
+
+* How is the staging area different from the working directory and the repository? What value do you think it offers?
+While working on a project we would like to commit only some of the files together. Git provides functinality to do just the same. It allows to add files to an intermediate staging area using git add command. Once all the necessary files are in staging area we can perform commit on these files.
+Working directory is the location in filesystem where all the files are present locally.
+
