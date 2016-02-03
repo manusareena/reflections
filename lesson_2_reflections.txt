@@ -19,5 +19,8 @@ With branches we can organize specific changes that apply to the entire project 
 
 
 * How do the diagrams help you visualize the branch structure?
-The branch structure is like a tree. There could be many branches that exist. Hence a graphical structure of the branch structure is more intuitive that specifying which branch belongs where.
+The branch structure is like a tree. There could be many branches that exist. Hence a graphical structure of the branch structure is more intuitive that specifying which branch belongs where. Use the command git log --graph [--oneline] to display the graphical branch structure.
+
+* What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+While merging two branches the changes in one branch is merged into the currently checkout branch. Once this is completed the merged branch is deleted. This can be done because the commits in the merged brached can be acheived by using the current branch. The command to do this is git merge.
 
