@@ -1,0 +1,14 @@
+Comparing files in a line by line manner may work well for smaller files. However, in larger projects the files may run into thousands of lines. Looking for a small typo in these larger files is tiresome.
+Tools such as diff and file compare allow to display only the changes between the files. This reuces the search text to look for the typo that we need to find.
+
+It is often the case that as the code is developed the history is forgotten. There are times when it will be required to look back into the historical code to find why a particular change was incorporated. It will also help a new programmer to learn the evolution of the software.
+
+In manual commit, often the commit point is missed. In other cases, there could be more than one logical change entering into the commit thereby defeating the purpose of commit. Despite these drawbacks, manual commit allows great flexibility to the programmer to define the best commit point. Automatic commit is not able to identify the correct logical break to commit a particular change.
+
+Git is primarily a version control system for source code files. In a software, there are usually multiple inter related files. A change in one of the files might require a corresponding change in a related file. Keeping track of these changes separately is not the best way. Hence, git allows saving multiple files in one commit thereby allowing to see all related changes in those files.
+
+To view the commit history of a file use the commad git log <filename>.
+To view the difference between two commits use the command git diff <first_id> <second_id>. Note that the previous commit is displayed below in the git log output. The git log output is chronologically descending order, i.e. latest revisions appear on top of the file.
+
+With version control we can make changes that might break the code. If we discover that a bug is introduced during the dvelopment phase, we can always go back to the commit log to find this. Using the commit logs we can find out the exact version where the bug was introduced. Comparing this version with the previous version will give hints about what change caused the bug. Then we an easily correct the bug and commit the new version.
+
