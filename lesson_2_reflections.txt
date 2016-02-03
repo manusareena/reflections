@@ -13,3 +13,7 @@ Working directory is the location in filesystem where all the files are present 
 * How can you use the staging area to make sure you have one commit per logical change?
 Git allows us to add the files that are modified into the staging area. The commit command picks up the files from staging area to commit and not from the working directory. This allows to commit only the logical change even when there are multiple file changes. Also, git diff works on staging area and working directiry while git diff --staged works between staging area and the previous commmit.
 
+
+* What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+With branches we can organize specific changes that apply to the entire project organized. It might an version for specific target group. Or it might be different modes of a game. Branches allow to organize these global changes separately.
+
