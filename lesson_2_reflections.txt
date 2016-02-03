@@ -24,3 +24,7 @@ The branch structure is like a tree. There could be many branches that exist. He
 * What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 While merging two branches the changes in one branch is merged into the currently checkout branch. Once this is completed the merged branch is deleted. This can be done because the commits in the merged brached can be acheived by using the current branch. The command to do this is git merge.
 
+
+* What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging is the best way if the changes are in different locations on the merging branches. However, if there is a conflict, then automatic merging cannot decide which changes to retain. It is better to leave this decision to the programmers concerned and manual merging is the best option.
+
